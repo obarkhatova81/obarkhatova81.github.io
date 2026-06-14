@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Olga Barkhatova — Senior Backend Engineer</title>
+  <meta name="description" content="Senior Backend Engineer specializing in Go, Kafka, PostgreSQL, distributed systems, and payment infrastructure." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">OB</span>
+      <ul class="nav-links">
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <img src="image-600.jpg" alt="Olga Barkhatova" class="hero-avatar" width="220" height="220" loading="eager" fetchpriority="high" decoding="async" />
+      <h1>Olga Barkhatova</h1>
+      <p class="hero-title">Senior Backend Engineer</p>
+      <p class="hero-expertise">Distributed Systems &bull; Platform Engineering &bull; Backend Architecture</p>
+      <p class="hero-tags">Go &middot; Python &middot; Kafka &middot; PostgreSQL &middot; Kubernetes</p>
+      <p class="hero-description">10+ years of experience taking distributed systems from design to production.</p>
+      <div class="hero-links">
+        <a href="mailto:olgabarkhatovajob@gmail.com">Email</a>
+        <a href="https://t.me/olgabarkhatova" target="_blank" rel="noopener">Telegram</a>
+        <a href="Olga_Barkhatova_Senior_Go_Developer.pdf">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Summary -->
+  <section id="summary" class="section-alt">
+    <div class="container">
+      <h2>Summary</h2>
+      <div class="prose">
+        <p>Senior Backend Engineer with 10+ years of experience building backend systems using Go and Python.</p>
+        <p>My experience includes large-scale e-commerce platforms, payment systems, infrastructure platforms, cybersecurity products, and distributed backend systems built with Go and Python.</p>
+        <p>I typically work across the full delivery cycle, from requirements and architecture to implementation, production rollout, and support of live systems.</p>
+        <details>
+          <summary>Read full profile</summary>
+          <p>Currently working at Wildberries on a large-scale B2B platform focused on payments and order processing. Rebuilt Kafka-based payment processing, redesigned consumers, introduced idempotent event handling, and improved traceability of financial operations across distributed services, achieving zero data loss and increasing reliability of payment processing.</p>
+          <p>Launched a QR-based payment flow with asynchronous reconciliation and payment-to-order matching, reducing payment time from several days to under one hour. Contributed to a certificate purchase platform that generated ~&euro;12M GMV from 500K transactions during peak season.</p>
+          <p>Optimized high-load PostgreSQL systems, reducing critical response times from ~12 seconds to under 1 second.</p>
+          <p>Previously designed and developed backend systems for a bank IaaS platform, supporting VM lifecycle management, IP allocation, infrastructure automation, and integrations with VMware vSphere, IPAM, and F5 BIG-IP across thousands of virtual machines and multiple internal teams.</p>
+          <p>Built a backend platform from scratch using Python, FastAPI, Celery, and PostgreSQL, delivering an MVP and pilot rollout across several dozen residential buildings while owning architecture, domain design, service boundaries, and key technical decisions.</p>
+          <p>Earlier developed distributed SKU matching and pricing systems processing up to 60M products per run, helping scale one of the largest e-commerce marketplaces through microservices, distributed processing pipelines, and large-scale PostgreSQL and ClickHouse workloads.</p>
+          <p>Worked on cybersecurity products focused on traffic analysis and attack detection, developing backend systems capable of processing up to 10 Gbps of network traffic. Designed detection logic, load-testing infrastructure, and engineering tools used to improve reliability, performance, and testing efficiency of security products.</p>
+          <p>Across my career, I have worked in e-commerce, fintech, infrastructure, platform engineering, and cybersecurity, combining hands-on backend development with architecture decisions, technical leadership, and long-term evolution of production systems.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="period">Sept 2022 &ndash; Present</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Senior Go Developer</h3>
+            <div class="company-header">
+              <a href="https://www.wildberries.ru/" class="company-link-wrapper" target="_blank" rel="noopener">
+                <img src="assets/logos/wb.png" alt="Wildberries logo" class="company-logo">
+              </a>
+              <p class="company">
+                <a href="https://www.wildberries.ru/" class="company-link" target="_blank" rel="noopener">Wildberries</a>
+                &middot; Remote
+              </p>
+            </div>
+            <p class="role-description">Wildberries is one of the largest e-commerce platforms in Eastern Europe, serving 30M+ users.</p>
+            <p class="role-description">As a Senior Backend Engineer on the B2B sales platform, I helped build the platform from its early stages, defining service contracts, payment operation models, and backend systems for orders and payments.</p>
+            <ul>
+              <li>Rebuilt payment event processing, achieving 0% message loss and full transaction traceability.</li>
+              <li>Implemented idempotent financial processing, reducing duplicate operations by about five times and eliminating duplicate refunds.</li>
+              <li>Launched QR-based instant payments, reducing payment time from several days to less than one hour for about 18% of B2B orders.</li>
+              <li>Optimized PostgreSQL workflows, reducing admin panel response time from about 12 seconds to under 1 second.</li>
+              <li>Launched a certificate purchase and payment flow that handled about 500 thousand transactions and generated around &euro;12M GMV during peak season.</li>
+            </ul>
+            <details>
+              <summary>Show more</summary>
+              <ul>
+                <li>Designed a unified payment integration layer for scalable onboarding of payment providers.</li>
+                <li>Designed payment allocation and matching flows for multi-order payments, reducing the number of unrecognized payments.</li>
+                <li>Reworked Kafka-based payment processing by introducing retry handling, DLQ processing, and improved observability for financial event flows.</li>
+              </ul>
+              <p class="stack-line">Stack: Go, Kafka, PostgreSQL, ClickHouse, Redis, Kubernetes, gRPC</p>
+            </details>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="period">Aug 2019 &ndash; Sept 2022</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Senior Backend Developer</h3>
+            <div class="company-header">
+              <a href="https://selecty.io/" class="company-link-wrapper" target="_blank" rel="noopener">
+                <img src="assets/logos/selecty.png" alt="Selecty logo" class="company-logo">
+              </a>
+              <p class="company">
+                <a href="https://selecty.io/" class="company-link" target="_blank" rel="noopener">Selecty</a>
+                &middot; Remote
+              </p>
+            </div>
+            <p class="role-description">Software development and consulting company delivering custom backend, cloud, and infrastructure solutions for enterprise clients.</p>
+            <p class="role-description">Worked on two major projects: a bank infrastructure platform (IaaS) and a residential operations platform (SaaS).</p>
+            <details>
+              <summary>Residential Operations Platform (SaaS)</summary>
+              <ul>
+                <li>Designed and built a backend system from scratch using Python, FastAPI, Celery, and PostgreSQL, delivering an MVP and pilot rollout across several dozen residential buildings.</li>
+                <li>Established development and QA processes from the ground up, reducing production issues by ~30%.</li>
+                <li>Owned system architecture and key design decisions, defining domain model and service boundaries for a scalable system.</li>
+                <li>Implemented a task generation engine based on configurable rules, automating core operational workflows and reducing manual coordination.</li>
+                <li>Hired and onboarded engineers, conducted technical interviews, and trained new team members.</li>
+              </ul>
+            </details>
+            <details>
+              <summary>Bank Infrastructure Platform (IaaS)</summary>
+              <ul>
+                <li>Designed and developed backend services in Go for a bank IaaS platform, supporting VM lifecycle management and infrastructure automation.</li>
+                <li>Implemented IPAM integration, improving IP allocation reliability, automating core operational workflows, and reducing manual effort by ~3x.</li>
+                <li>Integrated with VMware vSphere API, enabling scalable VM provisioning and lifecycle management across multiple business units.</li>
+                <li>Developed backend services for F5 BIG-IP management with tenant isolation and consistent configuration management.</li>
+                <li>Built a shared Kubernetes health-check library adopted across most platform services, improving reliability and standardizing readiness checks.</li>
+              </ul>
+            </details>
+            <p class="stack-line">Stack: Go, Python, PostgreSQL, Kafka, Kubernetes, VMware vSphere, F5 BIG-IP</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="period">May 2017 &ndash; Aug 2019</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Senior Backend Developer</h3>
+            <div class="company-header">
+              <a href="https://megamarket.ru/" class="company-link-wrapper" target="_blank" rel="noopener">
+                <img src="assets/logos/megamarket.png" alt="Megamarket logo" class="company-logo">
+              </a>
+              <p class="company">
+                <a href="https://megamarket.ru/" class="company-link" target="_blank" rel="noopener">Megamarket</a>
+                &middot; Remote
+              </p>
+            </div>
+            <p class="role-description">Major e-commerce marketplace serving 16M+ monthly users.</p>
+            <p class="role-description">Developed backend services for high-load SKU matching, product processing, and pricing systems using microservices architecture and distributed data pipelines.</p>
+            <ul>
+              <li>Built a high-load SKU matching and pricing system processing up to 60M products per run using Go, PostgreSQL, and ClickHouse.</li>
+              <li>Optimized large-scale product processing by introducing batch-based matching, reducing PostgreSQL query volume from one query per SKU to one query per batch.</li>
+              <li>Designed and implemented a distributed matching pipeline with independently scalable microservices, reducing system coupling and improving scalability.</li>
+              <li>Developed internal APIs and data contracts between matching services, simplifying service evolution and reducing cross-service dependencies.</li>
+            </ul>
+            <details>
+              <summary>Show more</summary>
+              <ul>
+                <li>Participated in decomposition of a shared Microsoft SQL Server monolith by extracting business logic into microservices and migrating services to PostgreSQL.</li>
+                <li>Implemented distributed tracing and observability across matching services using Jaeger, structured logging, and metrics.</li>
+                <li>Developed supporting Python/FastAPI microservices for Yandex Toloka integration, automating data labeling workflows for matching quality improvement.</li>
+              </ul>
+              <p class="stack-line">Stack: Go, Python, PostgreSQL, ClickHouse, Kafka, Microservices</p>
+            </details>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="period">Sept 2015 &ndash; May 2017</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Python Backend Engineer</h3>
+            <div class="company-header">
+              <a href="https://global.ptsecurity.com/en/" class="company-link-wrapper" target="_blank" rel="noopener">
+                <img src="assets/logos/pt.png" alt="Positive Technologies logo" class="company-logo">
+              </a>
+              <p class="company">
+                <a href="https://global.ptsecurity.com/en/" class="company-link" target="_blank" rel="noopener">Positive Technologies</a>
+                &middot; Remote
+              </p>
+            </div>
+            <p class="role-description">Global cybersecurity company developing enterprise security products, traffic analysis systems, and threat detection solutions for large-scale infrastructures.</p>
+            <p class="role-description">Designed and built backend systems for high-throughput network traffic analysis products capable of processing up to 10 Gbps of network traffic.</p>
+            <ul>
+              <li>Implemented attack detection plugins, including brute force, password spraying, NTLM relay, and service anomaly detection, expanding threat detection coverage.</li>
+              <li>Built a load testing framework with asynchronous execution, reproducible environments, and historical regression analysis, reducing manual validation effort by ~3x.</li>
+              <li>Developed backend services and APIs using Django and DRF for large-scale traffic analysis systems backed by PostgreSQL and Elasticsearch.</li>
+              <li>Designed testing infrastructure with PostgreSQL-based result storage, enabling regression tracking and performance comparison across releases.</li>
+            </ul>
+            <details>
+              <summary>Show more</summary>
+              <ul>
+                <li>Introduced automated API and UI testing with Pytest and Playwright integrated into CI/CD pipelines, improving regression coverage and reducing release risks.</li>
+                <li>Developed internal traffic analysis and debugging tools using asyncio and aiohttp for parallel data processing and performance analysis.</li>
+                <li>Improved QA and release processes, increasing test coverage, reproducibility, and reliability of production releases.</li>
+                <li>Led QA automation initiatives, conducted technical interviews, hired engineers, and trained new team members.</li>
+              </ul>
+              <p class="stack-line">Stack: Python, Django, PostgreSQL, Elasticsearch, Redis, asyncio</p>
+            </details>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section-alt">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-rows">
+
+        <div class="skills-row">
+          <span class="skills-row-label">Backend</span>
+          <div class="skills-row-tags">
+            <span>Go</span><span>Python</span><span>Gin</span><span>Django</span><span>Django REST Framework</span><span>FastAPI</span><span>Flask</span><span>Celery</span><span>REST API</span><span>gRPC</span><span>API versioning</span>
+          </div>
+        </div>
+
+        <div class="skills-row">
+          <span class="skills-row-label">Databases &amp; Storage</span>
+          <div class="skills-row-tags">
+            <span>PostgreSQL</span><span>ClickHouse</span><span>Redis</span><span>Elasticsearch</span><span>MySQL</span><span>MS SQL Server</span><span>InfluxDB</span><span>S3-compatible object storage</span>
+          </div>
+        </div>
+
+        <div class="skills-row">
+          <span class="skills-row-label">Messaging &amp; Async</span>
+          <div class="skills-row-tags">
+            <span>Kafka</span><span>RabbitMQ</span><span>asynchronous processing</span><span>event-driven systems</span><span>retries</span><span>DLQ</span><span>idempotency</span>
+          </div>
+        </div>
+
+        <div class="skills-row">
+          <span class="skills-row-label">Architecture</span>
+          <div class="skills-row-tags">
+            <span>Distributed Systems</span><span>Microservices</span><span>Event-Driven Architecture</span><span>DDD</span><span>Clean Architecture</span><span>CQRS</span><span>High-load Systems</span><span>SOLID</span>
+          </div>
+        </div>
+
+        <div class="skills-row">
+          <span class="skills-row-label">Infrastructure</span>
+          <div class="skills-row-tags">
+            <span>Kubernetes</span><span>Docker</span><span>Helm</span><span>Terraform</span><span>Linux</span><span>VMware vSphere</span><span>F5 BIG-IP</span><span>Yandex Cloud</span><span>Keycloak</span>
+          </div>
+        </div>
+
+        <div class="skills-row">
+          <span class="skills-row-label">Observability</span>
+          <div class="skills-row-tags">
+            <span>Prometheus</span><span>Grafana</span><span>OpenTelemetry</span><span>Jaeger</span><span>ELK</span><span>structured logging</span><span>tracing</span><span>monitoring</span>
+          </div>
+        </div>
+
+        <div class="skills-row">
+          <span class="skills-row-label">Testing &amp; QA</span>
+          <div class="skills-row-tags">
+            <span>Pytest</span><span>Playwright</span><span>load testing</span><span>API testing</span><span>regression testing</span><span>CI/CD</span>
+          </div>
+        </div>
+
+        <div class="skills-row">
+          <span class="skills-row-label">Domains</span>
+          <div class="skills-row-tags">
+            <span>platform engineering</span><span>distributed systems</span><span>e-commerce</span><span>marketplace platforms</span><span>cybersecurity</span><span>network traffic analysis</span><span>fintech infrastructure</span><span>payments</span>
+          </div>
+        </div>
+
+        <div class="skills-row">
+          <span class="skills-row-label">Languages</span>
+          <div class="skills-row-tags">
+            <span>English — full professional proficiency</span><span>Russian — native</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-meta"></div>
+          <div class="timeline-body">
+            <h3>Specialist Degree in Automated Systems for Information Processing and Control</h3>
+            <p class="company"><a href="https://www.nntu.ru/" class="company-link" target="_blank" rel="noopener">Nizhny Novgorod State Technical University</a></p>
+            <p class="edu-note">Equivalent to Master of Science.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section-alt">
+    <div class="container contact-container">
+      <h2>Contact</h2>
+      <p class="contact-intro">
+        Open to Senior Backend Engineering opportunities, distributed systems, platform engineering, fintech, and infrastructure projects.
+      </p>
+      <div class="contact-links">
+        <div><span class="contact-label">Email</span>&ensp;<a href="mailto:olgabarkhatovajob@gmail.com">olgabarkhatovajob@gmail.com</a></div>
+        <div><span class="contact-label">Telegram</span>&ensp;<a href="https://t.me/olgabarkhatova" target="_blank" rel="noopener">@olgabarkhatova</a></div>
+        <div><span class="contact-label">Resume</span>&ensp;<a href="Olga_Barkhatova_Senior_Go_Developer.pdf" target="_blank">Download PDF</a></div>
+        <div><span class="contact-label">Phone</span>&ensp;<span class="contact-value">+995 511 164 930</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Olga Barkhatova</p>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
